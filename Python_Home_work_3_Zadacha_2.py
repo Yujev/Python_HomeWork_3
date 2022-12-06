@@ -8,7 +8,7 @@ from random import randint
 
 n = 5       # Размер списка
 master = 1  # Первый элемент
-second = 10 # Последний элемент
+second = 5 # Последний элемент
 
 
 def new_list(n, master, second):
