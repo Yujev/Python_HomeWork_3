@@ -6,9 +6,9 @@
 
 from random import randint
 
-n = 5       # Размер списка
+n = 5  # Размер списка
 master = 1  # Первый элемент
-second = 5 # Последний элемент
+second = 5  # Последний элемент
 
 
 def new_list(n, master, second):
@@ -19,15 +19,15 @@ my_list = new_list(n, master, second)
 print(f'Твой список случайных чисел: \n{my_list}')
 
 
-def list2(k):   # Считаю произведение пар элементов
+def list2(k):  # Считаю произведение пар элементов
     res = []
     while len(k) > 1:
         res.append(k[0] * k[-1])
         del k[0]
         del k[-1]
-    if len(k) == 1: res.append(k[0] ** 2)   # Возвожу серединный элемент в степень
+    if len(k) == 1: res.append(k[0] ** 2)  # Возвожу серединный элемент в степень
     return res
+
 
 print('Произведение пар чисел списка: ')
 print(list2(my_list))
-
